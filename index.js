@@ -19,7 +19,7 @@ Emailer.init = function(data, callback) {
     callback();
 };
 
-Emailer.send = function(data) {
+Emailer.send = function(data, callback) {
     var username = Meta.config['emailer:local:username'];
     var pass = Meta.config['emailer:local:password'];
     var transportOptions = {
@@ -47,6 +47,7 @@ Emailer.send = function(data) {
             winston.warn('[emailer.smtp] Unable to send `' + data.template + '` email to uid ' + data.uid + '!!');
             // winston.error('[emailer.smtp] ' + response.message);
         }
+        callback(err, data);
     });
 }
 
