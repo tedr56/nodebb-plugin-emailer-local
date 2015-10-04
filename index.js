@@ -33,7 +33,8 @@ Emailer.send = function(data, callback) {
     var pass = settings['emailer:local:password'];
     var transportOptions = {
         host: settings['emailer:local:host'],
-        port: settings['emailer:local:port']
+        port: settings['emailer:local:port'],
+        secureConnection: settings['emailer:local:secure'] === 'on'
     };
     if( username || pass ) {
         transportOptions.auth = {
