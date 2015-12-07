@@ -6,13 +6,7 @@ NodeBB plugin for sending emails via SMTP services
 Installation
 ---
 
-* First install the package from the NPM repository
-
-``` bash
-cd /nodebb/install/path
-npm install nodebb-plugin-emailer-local
-```
-
+* Install this plugin via the "Plugins" page in the ACP
 * Then enable the plugin in NodeBB's Admin Control Panel in the Plugins tab.
 * Restart NodeBB
 
@@ -29,3 +23,10 @@ Features to add
 
 DKIM signatures  
 Popular services (Gmail, Hotmail, etc.)
+
+Credits
+---
+
+**Original Author**: [AlfredDobradi](https://github.com/AlfredDobradi)
+
+The NodeBB team is currently taking care of maintenance upgrades for this plugin (compatibility between versions). If anybody wishes to become the core maintainer of this plugin and add new features, please give us a shout on this plugin's [thread](https://community.nodebb.org/topic/496/-nodebb-plugin-emailer-local-local-email-plugin) on our community. :)
